@@ -1,0 +1,29 @@
+.global_noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.carousel{
+    border: 1px solid $color-rojo;
+    box-shadow: 0 0 30px $segundo-rojo;
+}
+.titulo_noticias{
+    h1 {
+        font-family:"Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        color: $color-blanco;
+      }
+}
+
+.carousel-inner{
+    h5{
+        background-color: $color-fondo;
+      }
+    
+      p{
+        background-color: $color-fondo;
+      }
+}

@@ -1,0 +1,132 @@
+.global{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .escuderias_texto{
+        margin-left: 50px;
+        margin-right: 50px;
+    
+        h1{
+            font-family: "Roboto", sans-serif;
+            font-size: 3.125rem;
+            font-weight: 900;
+            color:$color-blanco;
+            margin-bottom: 50px;
+        }
+        p{
+            font-family: "Roboto", sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            color:$color-blanco;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+    
+        .botones_escuderias{
+            margin-bottom: 70px;
+            a {
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $color-blanco;
+                    border-radius: 20px;
+                    margin-right: 11px;
+                  }
+            }
+        }
+    }
+    
+
+    
+    .auto_pilotos{
+        align-items: center;
+        .auto{
+            img{
+                width: 500px;
+                height: 330px;
+              }
+        }
+        .titulo_pilotos{
+            h3{
+                font-family: "Roboto", sans-serif;
+                font-size: 1.875rem;
+                font-weight: 600;
+                color: $color-blanco;
+                text-align: center;
+                margin-bottom: 50px;
+              }
+        }
+        .pilotos{
+            display: flex;
+            justify-content: space-evenly;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            p{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color:$color-blanco;
+            }
+            .max{
+                align-items: center;
+                img{
+                    border: 1px solid $color-blanco;
+                    border-radius: 75px;
+                }
+              }
+            .sergio{
+                align-items: center;
+                img{
+                    border: 1px solid $color-blanco;
+                    border-radius: 75px;
+                  }
+              }
+          }
+    }   
+}
+
+.circuitos {
+    width: 100%;
+    h1{
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        color: $color-blanco;
+        margin: 6.25rem auto;
+    }
+    .pistas{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(3, 1fr);
+        img{
+            width: 200px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color:$color-rojo;
+            margin-bottom: 10px;
+        }
+        li{
+            font-family: "Roboto", sans-serif;
+            font-weight: 200;
+            font-size: 11px;
+            color: $color-blanco;
+          }
+        .cards{
+            width: 250px;
+            height: 320px;
+            background-color: $color-fondo;
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+          
+        }
+    }
+}

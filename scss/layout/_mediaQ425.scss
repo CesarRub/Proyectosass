@@ -1,0 +1,54 @@
+@media (max-width: 425px){
+    header{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: .5625rem;
+                li{
+                    text-align: center;
+                }
+            }
+    }
+
+    main{
+        section{
+            .textos{
+                width: 100%;
+                margin-bottom: 3.125rem;
+        
+                h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+                p{
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 100;
+                }
+            }
+                .redes{     
+                    a{
+                        display: flex;
+                        margin-bottom: 1.25rem;
+                        font-size: 5px;
+                        img{
+                            font-size: 10px;
+                            &:hover{
+                                color: $color-rojo;
+                            }
+                        }
+                        
+                    }
+            
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        margin: auto;
+                        img{
+                            margin-bottom: 1.875rem;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }

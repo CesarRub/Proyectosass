@@ -1,0 +1,54 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+
+    h1{
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        color: $color-blanco;
+      }
+
+    .formulario{
+        background-color: $color-fondo;
+        border-radius: 50px;
+        height: 100%;
+        width: 40%;
+
+        .celdas{
+            margin-top: 50px;
+            margin-bottom: 40px;
+            input{
+                margin: auto;
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: $color-fondo;
+                width: 80%;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                border: 1px solid $color-fondo;
+              }
+          }
+        
+        .btn-enviar{
+            input{
+                width: 20%;
+                padding: 10px;
+                margin-bottom: 20px;
+                background-color: $color-rojo;
+                border: 1px solid $color-gris;
+                color: $color-blanco;
+                border-radius: 10px;
+                font-family: "Roboto", sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                cursor: pointer;
+              }
+        }
+      }
+  }

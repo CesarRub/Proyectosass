@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap");
+/*---------PARTIALS UTILITIES-------------*/
+/*---------PARTIALS BASE-------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*---------PARTIALS LAYOUT-------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header img {
+    width: 12.5rem; }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem; }
+    header ul li {
+      list-style: none; }
+      header ul li a {
+        color: #fffffff5;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-size: .9375rem;
+        font-weight: 400; }
+        header ul li a:hover {
+          color: #be0303; }
+
+body {
+  background-image: url(../assets/img/fondo.jpg);
+  margin: 1.875rem; }
+
+main section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4.375rem; }
+  main section .textos {
+    width: 40%;
+    color: #fffffff5;
+    text-align: justify; }
+    main section .textos h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      padding-bottom: 1.875rem;
+      font-size: 3.125rem; }
+    main section .textos p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+  main section .imagen_auto {
+    width: 50%; }
+    main section .imagen_auto img {
+      width: 100%; }
+  main section .redes {
+    display: flex;
+    width: 10%;
+    align-items: center; }
+    main section .redes a {
+      margin-bottom: 1.25rem; }
+      main section .redes a img:hover {
+        color: #be0303; }
+    main section .redes div {
+      display: flex;
+      flex-direction: column;
+      margin-left: .625rem; }
+      main section .redes div img {
+        margin-bottom: 1.875rem;
+        margin: auto;
+        width: 1.875rem; }
+    main section .redes .linea_vertical {
+      border-left: 1px solid #be0303;
+      height: 200px;
+      margin-left: 3.75rem;
+      margin-right: 1.875rem; }
+
+section .parte_uno {
+  display: flex;
+  justify-content: space-between; }
+
+section .nosotros {
+  width: 90%; }
+  section .nosotros h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fffffff5;
+    margin-bottom: 2.5rem; }
+  section .nosotros p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: .9375rem;
+    text-align: justify;
+    line-height: -1.875rem;
+    color: #fffffff5;
+    margin-bottom: 1.25rem; }
+  section .nosotros .redes {
+    width: 10%; }
+
+section .parte_dos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4.375rem;
+  align-items: center; }
+
+section .nuestro_equipo h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.875rem;
+  text-align: center;
+  color: #fffffff5; }
+
+section .cards {
+  width: 25rem;
+  height: 100%;
+  background-color: #5c5b5b2a;
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px; }
+  section .cards img {
+    width: 100%;
+    margin-bottom: 1.25rem; }
+  section .cards h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #fffffff5;
+    margin-bottom: .625rem; }
+  section .cards p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: .75rem;
+    line-height: -0.625rem;
+    color: #fffffff5;
+    text-align: justify; }
+
+.global {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .global .escuderias_texto {
+    margin-left: 50px;
+    margin-right: 50px; }
+    .global .escuderias_texto h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 3.125rem;
+      font-weight: 900;
+      color: #fffffff5;
+      margin-bottom: 50px; }
+    .global .escuderias_texto p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 200;
+      font-size: 14px;
+      color: #fffffff5;
+      text-align: justify;
+      margin-bottom: 30px; }
+    .global .escuderias_texto .botones_escuderias {
+      margin-bottom: 70px; }
+      .global .escuderias_texto .botones_escuderias a img {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fffffff5;
+        border-radius: 20px;
+        margin-right: 11px; }
+  .global .auto_pilotos {
+    align-items: center; }
+    .global .auto_pilotos .auto img {
+      width: 500px;
+      height: 330px; }
+    .global .auto_pilotos .titulo_pilotos h3 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.875rem;
+      font-weight: 600;
+      color: #fffffff5;
+      text-align: center;
+      margin-bottom: 50px; }
+    .global .auto_pilotos .pilotos {
+      display: flex;
+      justify-content: space-evenly; }
+      .global .auto_pilotos .pilotos img {
+        width: 150px;
+        height: 150px; }
+      .global .auto_pilotos .pilotos p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #fffffff5; }
+      .global .auto_pilotos .pilotos .max {
+        align-items: center; }
+        .global .auto_pilotos .pilotos .max img {
+          border: 1px solid #fffffff5;
+          border-radius: 75px; }
+      .global .auto_pilotos .pilotos .sergio {
+        align-items: center; }
+        .global .auto_pilotos .pilotos .sergio img {
+          border: 1px solid #fffffff5;
+          border-radius: 75px; }
+
+.circuitos {
+  width: 100%; }
+  .circuitos h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fffffff5;
+    margin: 6.25rem auto; }
+  .circuitos .pistas {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr); }
+    .circuitos .pistas img {
+      width: 200px;
+      height: 150px;
+      margin-bottom: 10px; }
+    .circuitos .pistas h4 {
+      font-family: "Roboto", sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #be0303;
+      margin-bottom: 10px; }
+    .circuitos .pistas li {
+      font-family: "Roboto", sans-serif;
+      font-weight: 200;
+      font-size: 11px;
+      color: #fffffff5; }
+    .circuitos .pistas .cards {
+      width: 250px;
+      height: 320px;
+      background-color: #5c5b5b2a;
+      border-radius: 20px;
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 30px; }
+
+.global_noticias {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.carousel {
+  border: 1px solid #be0303;
+  box-shadow: 0 0 30px #300101c0; }
+
+.titulo_noticias h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fffffff5; }
+
+.carousel-inner h5 {
+  background-color: #5c5b5b2a; }
+
+.carousel-inner p {
+  background-color: #5c5b5b2a; }
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px; }
+  .contenedor h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fffffff5; }
+  .contenedor .formulario {
+    background-color: #5c5b5b2a;
+    border-radius: 50px;
+    height: 100%;
+    width: 40%; }
+    .contenedor .formulario .celdas {
+      margin-top: 50px;
+      margin-bottom: 40px; }
+      .contenedor .formulario .celdas input {
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #5c5b5b2a;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #5c5b5b2a; }
+    .contenedor .formulario .btn-enviar input {
+      width: 20%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #be0303;
+      border: 1px solid #979595;
+      color: #fffffff5;
+      border-radius: 10px;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.25rem;
+  margin-bottom: 1.25rem;
+  align-items: center; }
+  footer .linea_horizontal {
+    border-bottom: 1px solid #be0303;
+    width: 300px; }
+  footer .derechos_reservados {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fffffff5;
+    text-align: center;
+    margin-top: 20px; }
+
+/*---------PARTIALS COMPONENTS-------------*/
+/*---------PARTIALS MEDIA QUIERIS-------------*/
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+    header img {
+      padding: 0; }
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4.375rem; }
+    main section .textos {
+      width: 70%;
+      margin-bottom: 3.125rem; }
+      main section .textos h1 {
+        text-align: center; }
+      main section .textos p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100; }
+    main section .imagen_auto {
+      width: 70%;
+      margin-bottom: 30px; }
+      main section .imagen_auto img {
+        width: 100%; }
+    main section .redes {
+      width: 100%;
+      align-items: center; }
+      main section .redes a {
+        display: flex;
+        margin-bottom: 1.25rem; }
+        main section .redes a img:hover {
+          color: #be0303; }
+      main section .redes div {
+        display: flex;
+        flex-direction: row;
+        margin: auto; }
+        main section .redes div img {
+          margin-bottom: 1.875rem;
+          margin: 20px;
+          width: 1.875rem; }
+      main section .redes .linea_vertical {
+        display: none; }
+  footer {
+    margin-top: 0px; } }
+
+@media (max-width: 425px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5625rem; }
+    header ul li {
+      text-align: center; }
+  main section .textos {
+    width: 100%;
+    margin-bottom: 3.125rem; }
+    main section .textos h1 {
+      font-size: 40px;
+      text-align: center; }
+    main section .textos p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+  main section .redes a {
+    display: flex;
+    margin-bottom: 1.25rem;
+    font-size: 5px; }
+    main section .redes a img {
+      font-size: 10px; }
+      main section .redes a img:hover {
+        color: #be0303; }
+  main section .redes div {
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+    main section .redes div img {
+      margin-bottom: 1.875rem;
+      margin: 10px; } }
+
+/*----MEDIA QUIERIS mobile-------*/

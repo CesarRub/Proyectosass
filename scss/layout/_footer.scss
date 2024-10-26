@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.25rem;
+    margin-bottom: 1.25rem;
+    align-items: center;
+
+    .linea_horizontal{
+        border-bottom: 1px solid $color-rojo;
+        width: 300px;
+    }
+
+    .derechos_reservados{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: $color-blanco;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

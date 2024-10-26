@@ -1,0 +1,24 @@
+header{
+    @include flex;
+    img{
+        width: 12.5rem;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.875rem;
+        li{
+            list-style: none;
+            a{
+                color: $color-blanco;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-size: .9375rem;
+                font-weight: 400;
+                &:hover{
+                    color: $color-rojo;
+                }
+            }
+        }
+    } 
+}

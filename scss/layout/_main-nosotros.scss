@@ -1,0 +1,79 @@
+section{
+    .parte_uno{
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    .nosotros{
+        width: 90%;
+        h1{
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            text-align: center;
+            color:$color-blanco;
+            margin-bottom: 2.5rem;
+        }
+        p{
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: .9375rem;
+            text-align: justify;
+            line-height: -1.875rem;
+            color:$color-blanco;
+            margin-bottom: 1.25rem;
+        }
+
+            .redes{
+                width: 10%;
+            }
+        }
+}
+
+section{
+    .parte_dos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 4.375rem;
+        align-items: center;
+        }
+
+        .nuestro_equipo{
+            h2{
+                font-family: "Roboto", sans-serif;
+                font-weight: 200;
+                font-size: 1.875rem;
+                text-align: center;
+                color:$color-blanco;
+            }
+        }
+        .cards{
+            width: 25rem;
+            height: 100%;
+            background-color: map-get($colores-informula, $key:color4);
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+            img{
+                width: 100%;
+                margin-bottom: 1.25rem;
+            }
+            h4{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 1.25rem;
+                color: $color-blanco;
+                margin-bottom: .625rem; ;
+            }
+            p{
+                font-family: "Roboto", sans-serif;
+                font-weight: 200;
+                font-size: .75rem;
+                line-height: -0.625rem;
+                color: $color-blanco;
+                text-align: justify;
+            }
+        }
+    }

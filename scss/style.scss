@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+
+
+/*---------PARTIALS UTILITIES-------------*/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*---------PARTIALS BASE-------------*/
+@import "./base/resets";
+
+/*---------PARTIALS LAYOUT-------------*/
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/main-index";
+@import "./layout/main-nosotros";
+@import "./layout/main-escuderias";
+@import "./layout/main-noticias";
+@import "./layout/main-newsletter";
+@import "./layout/footer";
+
+/*---------PARTIALS COMPONENTS-------------*/
+
+/*---------PARTIALS MEDIA QUIERIS-------------*/
+@import "./layout/mediaQ1024";
+@import "./layout/mediaQ425";
+
+
+
+/*----MEDIA QUIERIS mobile-------*/
+
+
