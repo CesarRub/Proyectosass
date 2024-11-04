@@ -17,7 +17,9 @@ header{
                 font-weight: 400;
                 &:hover{
                     color: $color-rojo;
+                    animation: change-color 2s linear;
                 }
+                
             }
         }
     } 

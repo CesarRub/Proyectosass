@@ -49,6 +49,95 @@
                         }
                     }
                 }
+                /*medias pagina nosotros*/
+                .parte_dos{
+                    margin: auto;
+                    .nuestro_equipo{
+                        h2{
+                            align-items: center;
+                            margin-bottom: .625rem;
+                        }
+                    }
+                    .cards{
+                        width: .625rem;
+                        margin: auto;
+                    }
+                }
+            }
+            
+                .contenedor{
+                    h1{
+                        margin-bottom: 20px;
+                    }
+                    .formulario{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        .btn-enviar{
+                            input{
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+        }
+
+        .global{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .escuderias_texto{
+                margin-left: 0px;
+                margin-right: 0px;
+                .botones_escuderias{
+                    margin-left: 1.5625rem;
+                }
+            }
+
+            .auto_pilotos{
+                .auto{
+                    img{
+                        height: 280px;
+                    }
+                }
+                .pilotos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+            }
+            
+        }
+
+        .circuitos{
+            .pistas{
+                display: grid;
+                grid-template-columns: 1fr;
             }
         }
-    }
+
+        .container-fluid{
+            .titulo_noticias{
+                h1{
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+        
+            .carousel{
+                width: 100%;
+                .redes{
+                    a{
+                        width: 10px;
+                    }
+                }
+            }
+        }
+}
+
+
+
+
+
+

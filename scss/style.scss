@@ -6,6 +6,7 @@
 @import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixins";
+@import "./utilities/keyframes";
 
 /*---------PARTIALS BASE-------------*/
 @import "./base/resets";
@@ -24,7 +25,9 @@
 
 /*---------PARTIALS MEDIA QUIERIS-------------*/
 @import "./layout/mediaQ1024";
+@import "./layout/mediaQ768";
 @import "./layout/mediaQ425";
+
 
 
 

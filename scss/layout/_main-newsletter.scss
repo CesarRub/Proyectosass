@@ -17,7 +17,7 @@
         background-color: $color-fondo;
         border-radius: 50px;
         height: 100%;
-        width: 40%;
+        width: 60%;
 
         .celdas{
             margin-top: 50px;
@@ -36,10 +36,13 @@
           }
         
         .btn-enviar{
+          display: flex;
+          justify-content: flex-end;
             input{
                 width: 20%;
                 padding: 10px;
                 margin-bottom: 20px;
+                margin-right: 20px;
                 background-color: $color-rojo;
                 border: 1px solid $color-gris;
                 color: $color-blanco;

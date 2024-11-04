@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap");
 /*---------PARTIALS UTILITIES-------------*/
+@keyframes change-color {
+  from {
+    color: #fffffff5; }
+  to {
+    color: #be0303; } }
+
 /*---------PARTIALS BASE-------------*/
 * {
   margin: 0;
@@ -26,7 +32,8 @@ header {
         font-size: .9375rem;
         font-weight: 400; }
         header ul li a:hover {
-          color: #be0303; }
+          color: #be0303;
+          animation: change-color 2s linear; }
 
 body {
   background-image: url(../assets/img/fondo.jpg);
@@ -274,7 +281,7 @@ section .cards {
     background-color: #5c5b5b2a;
     border-radius: 50px;
     height: 100%;
-    width: 40%; }
+    width: 60%; }
     .contenedor .formulario .celdas {
       margin-top: 50px;
       margin-bottom: 40px; }
@@ -288,18 +295,22 @@ section .cards {
         align-items: center;
         border-radius: 10px;
         border: 1px solid #5c5b5b2a; }
-    .contenedor .formulario .btn-enviar input {
-      width: 20%;
-      padding: 10px;
-      margin-bottom: 20px;
-      background-color: #be0303;
-      border: 1px solid #979595;
-      color: #fffffff5;
-      border-radius: 10px;
-      font-family: "Roboto", sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer; }
+    .contenedor .formulario .btn-enviar {
+      display: flex;
+      justify-content: flex-end; }
+      .contenedor .formulario .btn-enviar input {
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        background-color: #be0303;
+        border: 1px solid #979595;
+        color: #fffffff5;
+        border-radius: 10px;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer; }
 
 footer {
   display: flex;
@@ -369,6 +380,51 @@ footer {
   footer {
     margin-top: 0px; } }
 
+@media (max-width: 768px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5625rem; }
+    header ul li {
+      text-align: center; }
+  section .parte_dos {
+    display: flex;
+    flex-direction: column; }
+    section .parte_dos .nuestro_equipo h2 {
+      margin-bottom: 1.875rem; }
+  .global {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .global .escuderias_texto h1 {
+      text-align: center; }
+    .global .auto_pilotos .auto img {
+      margin: auto;
+      width: 100%;
+      height: 400px; }
+  .circuitos h1 {
+    margin: 40px 0px; }
+  .circuitos .pistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+.container-fluid .titulo_noticias h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 3.125re; }
+
+.container-fluid .carousel {
+  width: 60%; }
+
+main .contenedor h1 {
+  margin-bottom: 20px; }
+
+main .contenedor .formulario {
+  width: 70%;
+  margin-bottom: 20px; }
+  main .contenedor .formulario .btn-enviar input {
+    display: flex;
+    justify-content: center; }
+
 @media (max-width: 425px) {
   header ul {
     display: flex;
@@ -376,29 +432,71 @@ footer {
     gap: .5625rem; }
     header ul li {
       text-align: center; }
-  main section .textos {
+  main section {
+    /*medias pagina nosotros*/ }
+    main section .textos {
+      width: 100%;
+      margin-bottom: 3.125rem; }
+      main section .textos h1 {
+        font-size: 40px;
+        text-align: center; }
+      main section .textos p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100; }
+    main section .redes a {
+      display: flex;
+      margin-bottom: 1.25rem;
+      font-size: 5px; }
+      main section .redes a img {
+        font-size: 10px; }
+        main section .redes a img:hover {
+          color: #be0303; }
+    main section .redes div {
+      display: flex;
+      flex-direction: row;
+      margin: auto; }
+      main section .redes div img {
+        margin-bottom: 1.875rem;
+        margin: 10px; }
+    main section .parte_dos {
+      margin: auto; }
+      main section .parte_dos .nuestro_equipo h2 {
+        align-items: center;
+        margin-bottom: .625rem; }
+      main section .parte_dos .cards {
+        width: .625rem;
+        margin: auto; }
+  main .contenedor h1 {
+    margin-bottom: 20px; }
+  main .contenedor .formulario {
     width: 100%;
-    margin-bottom: 3.125rem; }
-    main section .textos h1 {
-      font-size: 40px;
-      text-align: center; }
-    main section .textos p {
-      font-family: "Roboto", sans-serif;
-      font-weight: 100; }
-  main section .redes a {
-    display: flex;
-    margin-bottom: 1.25rem;
-    font-size: 5px; }
-    main section .redes a img {
-      font-size: 10px; }
-      main section .redes a img:hover {
-        color: #be0303; }
-  main section .redes div {
-    display: flex;
-    flex-direction: row;
-    margin: auto; }
-    main section .redes div img {
-      margin-bottom: 1.875rem;
-      margin: 10px; } }
+    margin-bottom: 20px; }
+    main .contenedor .formulario .btn-enviar input {
+      display: flex;
+      justify-content: center; }
+  .global {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .global .escuderias_texto {
+      margin-left: 0px;
+      margin-right: 0px; }
+      .global .escuderias_texto .botones_escuderias {
+        margin-left: 1.5625rem; }
+    .global .auto_pilotos .auto img {
+      height: 280px; }
+    .global .auto_pilotos .pilotos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .circuitos .pistas {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .container-fluid .titulo_noticias h1 {
+    text-align: center;
+    font-size: 30px; }
+  .container-fluid .carousel {
+    width: 100%; }
+    .container-fluid .carousel .redes a {
+      width: 10px; } }
 
 /*----MEDIA QUIERIS mobile-------*/
